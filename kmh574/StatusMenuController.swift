@@ -20,28 +20,30 @@ class StatusMenuController: NSObject {
     }
 
     @objc func refreshSpeed() {
-        if let wifiNetwork = CWWiFiClient.shared().interface()?.ssid(),
-            wifiNetwork == "_SNCF_WIFI_INOUI" {
-            wifiAPI.fetchSpeed { speed in
-                guard let speed = speed else {
-                    DispatchQueue.main.async {
-                        self.statusItem.configure(with: nil)
-                        self.launchTimer()
-                    }
-                    return
-                }
+        #if RELEASE
+        guard CWWiFiClient.shared().interface()?.ssid() == "_SNCF_WIFI_INOUI" else {
+            self.launchTimer()
+            return
+        }
+        #endif
 
-                let value = NSMeasurement(doubleValue: speed, unit: UnitSpeed.metersPerSecond)
-                let formatter = MeasurementFormatter()
-                formatter.numberFormatter.maximumFractionDigits = 1
-
+        wifiAPI.fetchSpeed { speed in
+            guard let speed = speed else {
                 DispatchQueue.main.async {
-                    self.statusItem.configure(with: formatter.string(from: value as Measurement<Unit>))
+                    self.statusItem.configure(with: nil)
                     self.launchTimer()
                 }
+                return
             }
-        } else {
-            self.launchTimer()
+
+            let value = NSMeasurement(doubleValue: speed, unit: UnitSpeed.metersPerSecond)
+            let formatter = MeasurementFormatter()
+            formatter.numberFormatter.maximumFractionDigits = 1
+
+            DispatchQueue.main.async {
+                self.statusItem.configure(with: formatter.string(from: value as Measurement<Unit>))
+                self.launchTimer()
+            }
         }
     }
 

@@ -24,8 +24,6 @@ class WifiAPI: NSObject {
                 return
             }
 
-            // {"success":true,"fix":9,"timestamp":1510680380,"latitude":46.52514,"longitude":4.64676,"altitude":12,"speed":70,"heading":0}
-
             guard let data = data else {
                 NSLog("No data")
                 completion?(nil)
@@ -43,6 +41,9 @@ class WifiAPI: NSObject {
                 completion?(nil)
                 return
             }
+
+            // JSON format:
+            // {"success":true,"fix":9,"timestamp":1510680380,"latitude":46.52514,"longitude":4.64676,"altitude":12,"speed":70,"heading":0}
 
             guard let speed = content["speed"] as? Double else {
                 NSLog("Parsing error")
