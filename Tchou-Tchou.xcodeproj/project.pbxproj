@@ -15,12 +15,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A642BCBE20BEEB48007115A1 /* kmh574.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmh574.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A642BCBE20BEEB48007115A1 /* Tchou-Tchou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tchou-Tchou.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A642BCC120BEEB48007115A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A642BCC320BEEB49007115A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A642BCC620BEEB49007115A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A642BCC820BEEB49007115A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A642BCC920BEEB49007115A1 /* kmh574.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kmh574.entitlements; sourceTree = "<group>"; };
+		A642BCC920BEEB49007115A1 /* Tchou-Tchou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tchou-Tchou.entitlements"; sourceTree = "<group>"; };
 		A642BCCF20BEED50007115A1 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		A642BCD120BEEEA6007115A1 /* WifiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,7 +39,7 @@
 		A642BCB520BEEB48007115A1 = {
 			isa = PBXGroup;
 			children = (
-				A642BCC020BEEB48007115A1 /* kmh574 */,
+				A642BCC020BEEB48007115A1 /* Tchou-Tchou */,
 				A642BCBF20BEEB48007115A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,12 +47,12 @@
 		A642BCBF20BEEB48007115A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A642BCBE20BEEB48007115A1 /* kmh574.app */,
+				A642BCBE20BEEB48007115A1 /* Tchou-Tchou.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A642BCC020BEEB48007115A1 /* kmh574 */ = {
+		A642BCC020BEEB48007115A1 /* Tchou-Tchou */ = {
 			isa = PBXGroup;
 			children = (
 				A642BCC120BEEB48007115A1 /* AppDelegate.swift */,
@@ -61,17 +61,17 @@
 				A642BCC320BEEB49007115A1 /* Assets.xcassets */,
 				A642BCC520BEEB49007115A1 /* MainMenu.xib */,
 				A642BCC820BEEB49007115A1 /* Info.plist */,
-				A642BCC920BEEB49007115A1 /* kmh574.entitlements */,
+				A642BCC920BEEB49007115A1 /* Tchou-Tchou.entitlements */,
 			);
-			path = kmh574;
+			path = "Tchou-Tchou";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A642BCBD20BEEB48007115A1 /* kmh574 */ = {
+		A642BCBD20BEEB48007115A1 /* Tchou-Tchou */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A642BCCC20BEEB49007115A1 /* Build configuration list for PBXNativeTarget "kmh574" */;
+			buildConfigurationList = A642BCCC20BEEB49007115A1 /* Build configuration list for PBXNativeTarget "Tchou-Tchou" */;
 			buildPhases = (
 				A642BCBA20BEEB48007115A1 /* Sources */,
 				A642BCBB20BEEB48007115A1 /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = kmh574;
+			name = "Tchou-Tchou";
 			productName = kmh574;
-			productReference = A642BCBE20BEEB48007115A1 /* kmh574.app */;
+			productReference = A642BCBE20BEEB48007115A1 /* Tchou-Tchou.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A642BCB920BEEB48007115A1 /* Build configuration list for PBXProject "kmh574" */;
+			buildConfigurationList = A642BCB920BEEB48007115A1 /* Build configuration list for PBXProject "Tchou-Tchou" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A642BCBD20BEEB48007115A1 /* kmh574 */,
+				A642BCBD20BEEB48007115A1 /* Tchou-Tchou */,
 			);
 		};
 /* End PBXProject section */
@@ -278,19 +278,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kmh574/kmh574.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Tchou-Tchou/Tchou-Tchou.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E873B24XVN;
-				INFOPLIST_FILE = kmh574/Info.plist;
+				INFOPLIST_FILE = "Tchou-Tchou/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_SWIFT_FLAGS = "-DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.kmh574;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.adhumi.tchou-tchou";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -301,19 +301,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kmh574/kmh574.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Tchou-Tchou/Tchou-Tchou.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E873B24XVN;
-				INFOPLIST_FILE = kmh574/Info.plist;
+				INFOPLIST_FILE = "Tchou-Tchou/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_SWIFT_FLAGS = "-DRELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.adhumi.kmh574;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.adhumi.tchou-tchou";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -323,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A642BCB920BEEB48007115A1 /* Build configuration list for PBXProject "kmh574" */ = {
+		A642BCB920BEEB48007115A1 /* Build configuration list for PBXProject "Tchou-Tchou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A642BCCA20BEEB49007115A1 /* Debug */,
@@ -332,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A642BCCC20BEEB49007115A1 /* Build configuration list for PBXNativeTarget "kmh574" */ = {
+		A642BCCC20BEEB49007115A1 /* Build configuration list for PBXNativeTarget "Tchou-Tchou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A642BCCD20BEEB49007115A1 /* Debug */,
