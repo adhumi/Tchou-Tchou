@@ -5,7 +5,7 @@ An application for macOS (10.12+) that just displays the speed of the TGV you ar
 
 ## How to use?
 
-- Download the [latest binary release](https://github.com/adhumi/Tchou-Tchou/releases) (submission to Mac App Store in progress)
+- Download the [latest binary release](https://github.com/adhumi/Tchou-Tchou/releases/latest) (submission to Mac App Store in progress)
 - Drag and drop **Tchou-tchou.app** to the `/Applications` folder
 - Run **Tchou-tchou.app**
 - Forget about it. The app is running (slowly) in background and will display the speed of your TGV when connected to the WiFi. 
