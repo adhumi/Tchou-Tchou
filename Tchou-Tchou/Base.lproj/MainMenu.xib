@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,10 +12,10 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="kmh574" customModuleProvider="target"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Tchou_Tchou" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="Kr2-lh-WU8" customClass="StatusMenuController" customModule="kmh574" customModuleProvider="target">
+        <customObject id="Kr2-lh-WU8" customClass="StatusMenuController" customModule="Tchou_Tchou" customModuleProvider="target">
             <connections>
                 <outlet property="statusMenu" destination="z23-qt-gh1" id="f21-9Q-kF0"/>
             </connections>
@@ -27,7 +29,62 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="224" y="394"/>
+            <point key="canvasLocation" x="104" y="252"/>
         </menu>
+        <window title="Tchou-Tchou" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="ND0-UH-WKG">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="321"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1200"/>
+            <value key="minSize" type="size" width="480" height="321"/>
+            <value key="maxSize" type="size" width="480" height="321"/>
+            <view key="contentView" id="at0-jV-obZ" customClass="LaunchView" customModule="Tchou_Tchou" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="321"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aoU-vG-dNO">
+                        <rect key="frame" x="176" y="173" width="128" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="QKm-Gx-101"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jas-LB-jWD">
+                        <rect key="frame" x="18" y="131" width="444" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="bGn-an-Ahv">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Tchou-Tchou affiche dans la barre de menu la vitesse du TGV dans lequel vous roulez, lorsque vous êtes connecté au réseau WiFi du train.</string>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIu-qU-nma">
+                        <rect key="frame" x="18" y="89" width="444" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Si vous n'êtes pas dans un TGV ou que vous n'êtes pas connecté à son WiFi, rien ne s'affiche et c'est normal." id="p2E-M3-PYo">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iv9-BM-WP3">
+                        <rect key="frame" x="110" y="40" width="261" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Lancer automatiquement au démarrage" bezelStyle="regularSquare" imagePosition="leading" state="on" inset="2" id="DTt-c8-UgB">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleStartupOpening:" target="at0-jV-obZ" id="TKX-cA-uY2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <connections>
+                    <outlet property="startupOpeningCheckbox" destination="Iv9-BM-WP3" id="3N6-h3-wFU"/>
+                </connections>
+            </view>
+            <point key="canvasLocation" x="80" y="596.5"/>
+        </window>
     </objects>
+    <resources>
+        <image name="logo" width="256" height="256"/>
+    </resources>
 </document>

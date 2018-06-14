@@ -16,6 +16,7 @@
 		BB0BAD5220D25569008EB3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0BAD5120D25569008EB3A6 /* Assets.xcassets */; };
 		BB0BAD5520D25569008EB3A6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0BAD5320D25569008EB3A6 /* MainMenu.xib */; };
 		BB0BAD5E20D2578B008EB3A6 /* Tchou-Tchou Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB0BAD4D20D25568008EB3A6 /* Tchou-Tchou Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBCA2AAA20D2639D00B3D49A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA2AA920D2639C00B3D49A /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		BB0BAD5620D25569008EB3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0BAD5720D25569008EB3A6 /* Tchou_Tchou_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tchou_Tchou_Launcher.entitlements; sourceTree = "<group>"; };
 		BB0BAD5B20D25662008EB3A6 /* Tchou-Tchou Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tchou-Tchou Launcher.entitlements"; sourceTree = "<group>"; };
+		BBCA2AA920D2639C00B3D49A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A642BCC120BEEB48007115A1 /* AppDelegate.swift */,
+				BBCA2AA920D2639C00B3D49A /* LaunchView.swift */,
 				A642BCCF20BEED50007115A1 /* StatusMenuController.swift */,
 				A642BCD120BEEEA6007115A1 /* WifiAPI.swift */,
 				A642BCC320BEEB49007115A1 /* Assets.xcassets */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A642BCD020BEED50007115A1 /* StatusMenuController.swift in Sources */,
+				BBCA2AAA20D2639D00B3D49A /* LaunchView.swift in Sources */,
 				A642BCD220BEEEA6007115A1 /* WifiAPI.swift in Sources */,
 				A642BCC220BEEB48007115A1 /* AppDelegate.swift in Sources */,
 			);

@@ -9,7 +9,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let runningApps = NSWorkspace.shared.runningApplications
         let isRunning = !runningApps.filter { $0.bundleIdentifier == launcherAppId }.isEmpty
         
-        SMLoginItemSetEnabled(launcherAppId as CFString, true)
+        if UserDefaults.standard.value(forKey: "OpenAtStartup") == nil {
+            UserDefaults.standard.set(false, forKey: "OpenAtStartup")
+        }
         
         if isRunning {
             DistributedNotificationCenter.default().post(name: Notification.Name("fr.adhumi.tchou-tchou.killLauncher"),
@@ -18,4 +20,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
 }
-
