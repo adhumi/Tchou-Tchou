@@ -12,7 +12,24 @@
 		A642BCC720BEEB49007115A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A642BCC520BEEB49007115A1 /* MainMenu.xib */; };
 		A642BCD020BEED50007115A1 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642BCCF20BEED50007115A1 /* StatusMenuController.swift */; };
 		A642BCD220BEEEA6007115A1 /* WifiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642BCD120BEEEA6007115A1 /* WifiAPI.swift */; };
+		BB0BAD5020D25568008EB3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BAD4F20D25568008EB3A6 /* AppDelegate.swift */; };
+		BB0BAD5220D25569008EB3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0BAD5120D25569008EB3A6 /* Assets.xcassets */; };
+		BB0BAD5520D25569008EB3A6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0BAD5320D25569008EB3A6 /* MainMenu.xib */; };
+		BB0BAD5E20D2578B008EB3A6 /* Tchou-Tchou Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB0BAD4D20D25568008EB3A6 /* Tchou-Tchou Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB0BAD5D20D25774008EB3A6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				BB0BAD5E20D2578B008EB3A6 /* Tchou-Tchou Launcher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A642BCBE20BEEB48007115A1 /* Tchou-Tchou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tchou-Tchou.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,10 +40,24 @@
 		A642BCC920BEEB49007115A1 /* Tchou-Tchou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tchou-Tchou.entitlements"; sourceTree = "<group>"; };
 		A642BCCF20BEED50007115A1 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		A642BCD120BEEEA6007115A1 /* WifiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiAPI.swift; sourceTree = "<group>"; };
+		BB0BAD4D20D25568008EB3A6 /* Tchou-Tchou Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tchou-Tchou Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0BAD4F20D25568008EB3A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB0BAD5120D25569008EB3A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0BAD5420D25569008EB3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB0BAD5620D25569008EB3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0BAD5720D25569008EB3A6 /* Tchou_Tchou_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tchou_Tchou_Launcher.entitlements; sourceTree = "<group>"; };
+		BB0BAD5B20D25662008EB3A6 /* Tchou-Tchou Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tchou-Tchou Launcher.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A642BCBB20BEEB48007115A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0BAD4A20D25568008EB3A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				A642BCC020BEEB48007115A1 /* Tchou-Tchou */,
+				BB0BAD4E20D25568008EB3A6 /* Tchou-Tchou Launcher */,
 				A642BCBF20BEEB48007115A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				A642BCBE20BEEB48007115A1 /* Tchou-Tchou.app */,
+				BB0BAD4D20D25568008EB3A6 /* Tchou-Tchou Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +99,19 @@
 			path = "Tchou-Tchou";
 			sourceTree = "<group>";
 		};
+		BB0BAD4E20D25568008EB3A6 /* Tchou-Tchou Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				BB0BAD5B20D25662008EB3A6 /* Tchou-Tchou Launcher.entitlements */,
+				BB0BAD4F20D25568008EB3A6 /* AppDelegate.swift */,
+				BB0BAD5120D25569008EB3A6 /* Assets.xcassets */,
+				BB0BAD5320D25569008EB3A6 /* MainMenu.xib */,
+				BB0BAD5620D25569008EB3A6 /* Info.plist */,
+				BB0BAD5720D25569008EB3A6 /* Tchou_Tchou_Launcher.entitlements */,
+			);
+			path = "Tchou-Tchou Launcher";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +122,7 @@
 				A642BCBA20BEEB48007115A1 /* Sources */,
 				A642BCBB20BEEB48007115A1 /* Frameworks */,
 				A642BCBC20BEEB48007115A1 /* Resources */,
+				BB0BAD5D20D25774008EB3A6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -86,18 +133,43 @@
 			productReference = A642BCBE20BEEB48007115A1 /* Tchou-Tchou.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB0BAD4C20D25568008EB3A6 /* Tchou-Tchou Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0BAD5A20D25569008EB3A6 /* Build configuration list for PBXNativeTarget "Tchou-Tchou Launcher" */;
+			buildPhases = (
+				BB0BAD4920D25568008EB3A6 /* Sources */,
+				BB0BAD4A20D25568008EB3A6 /* Frameworks */,
+				BB0BAD4B20D25568008EB3A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tchou-Tchou Launcher";
+			productName = "Tchou-Tchou Launcher";
+			productReference = BB0BAD4D20D25568008EB3A6 /* Tchou-Tchou Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A642BCB620BEEB48007115A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Adrien Humilière";
 				TargetAttributes = {
 					A642BCBD20BEEB48007115A1 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					BB0BAD4C20D25568008EB3A6 = {
+						CreatedOnToolsVersion = 9.4;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -120,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				A642BCBD20BEEB48007115A1 /* Tchou-Tchou */,
+				BB0BAD4C20D25568008EB3A6 /* Tchou-Tchou Launcher */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +204,15 @@
 			files = (
 				A642BCC420BEEB49007115A1 /* Assets.xcassets in Resources */,
 				A642BCC720BEEB49007115A1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0BAD4B20D25568008EB3A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0BAD5220D25569008EB3A6 /* Assets.xcassets in Resources */,
+				BB0BAD5520D25569008EB3A6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +229,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB0BAD4920D25568008EB3A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0BAD5020D25568008EB3A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -154,6 +244,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				A642BCC620BEEB49007115A1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BB0BAD5320D25569008EB3A6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB0BAD5420D25569008EB3A6 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -320,6 +418,48 @@
 			};
 			name = Release;
 		};
+		BB0BAD5820D25569008EB3A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tchou-Tchou Launcher/Tchou-Tchou Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E873B24XVN;
+				INFOPLIST_FILE = "Tchou-Tchou Launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.adhumi.tchou-tchou.launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		BB0BAD5920D25569008EB3A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tchou-Tchou Launcher/Tchou-Tchou Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E873B24XVN;
+				INFOPLIST_FILE = "Tchou-Tchou Launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.adhumi.tchou-tchou.launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +477,15 @@
 			buildConfigurations = (
 				A642BCCD20BEEB49007115A1 /* Debug */,
 				A642BCCE20BEEB49007115A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0BAD5A20D25569008EB3A6 /* Build configuration list for PBXNativeTarget "Tchou-Tchou Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0BAD5820D25569008EB3A6 /* Debug */,
+				BB0BAD5920D25569008EB3A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
