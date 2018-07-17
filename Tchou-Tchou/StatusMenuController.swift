@@ -54,7 +54,11 @@ class StatusMenuController: NSObject {
 
 extension NSStatusItem {
     func configure(with title: String?) {
-        self.title = title
-        self.isVisible = title == nil ? false : true
+        if let title = title, let font = NSFont.systemFont(ofSize: NSFont.systemFontSize).fixedWidthDigitsFont {
+            self.attributedTitle = NSAttributedString(string: title, attributes: [NSAttributedStringKey.font: font])
+        } else {
+            self.title = title
+            self.isVisible = title == nil ? false : true
+        }
     }
 }
