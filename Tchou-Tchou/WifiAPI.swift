@@ -1,10 +1,16 @@
 import Cocoa
 
 class WifiAPI: NSObject {
-    let BASE_URL = "https://wifi.sncf"
+    var baseURL: String = "https://wifi.sncf"
+
+    override init() {
+        if let baseURL = UserDefaults.standard.string(forKey: "DebugWifiAPIBaseURL") {
+            self.baseURL = baseURL
+        }
+    }
 
     func fetchSpeed(completion: ((Double?)->(Void))?) {
-        let url = URL(string: BASE_URL + "/router/api/train/gps")!
+        let url = URL(string: baseURL + "/router/api/train/gps")!
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 NSLog("API error: \(error)")
