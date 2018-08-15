@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,7 +34,7 @@
         <window title="Tchou-Tchou" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="ND0-UH-WKG">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <rect key="contentRect" x="196" y="240" width="480" height="321"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <value key="minSize" type="size" width="480" height="321"/>
             <value key="maxSize" type="size" width="480" height="321"/>
             <view key="contentView" id="at0-jV-obZ" customClass="LaunchView" customModule="Tchou_Tchou" customModuleProvider="target">
@@ -47,11 +47,11 @@
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="QKm-Gx-101"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jas-LB-jWD">
-                        <rect key="frame" x="18" y="131" width="444" height="34"/>
+                        <rect key="frame" x="18" y="131" width="444" height="51"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="bGn-an-Ahv">
                             <font key="font" metaFont="system"/>
-                            <string key="title">Tchou-Tchou affiche dans la barre de menu la vitesse du TGV dans lequel vous roulez, lorsque vous êtes connecté au réseau WiFi du train.</string>
+                            <string key="title">Tchou-Tchou affiche dans la barre de menu la vitesse du TGV ou de l'ICE dans lequel vous roulez, lorsque vous êtes connecté au réseau WiFi du train.</string>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -59,7 +59,7 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIu-qU-nma">
                         <rect key="frame" x="18" y="89" width="444" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Si vous n'êtes pas dans un TGV ou que vous n'êtes pas connecté à son WiFi, rien ne s'affiche et c'est normal." id="p2E-M3-PYo">
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Si vous n'êtes pas dans un TGV, un ICE, ou que vous n'êtes pas connecté à son WiFi, rien ne s'affiche et c'est normal." id="p2E-M3-PYo">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
