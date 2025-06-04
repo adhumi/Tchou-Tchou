@@ -32,5 +32,9 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Tchou-Tchou n’utilise pas vraiment votre position, mais a besoin de cette autorisaition pour vérifier que votre mac est connecté au réseau _SNCF_WIFI_INOUI.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Tchou-Tchou n’utilise pas vraiment votre position, mais a besoin de cette autorisaition pour vérifier que votre mac est connecté au réseau _SNCF_WIFI_INOUI.</string>
 </dict>
 </plist>

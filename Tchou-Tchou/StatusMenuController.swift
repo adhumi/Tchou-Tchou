@@ -1,9 +1,11 @@
 import Cocoa
 import CoreWLAN
+import CoreLocation
 
-class StatusMenuController: NSObject {
+class StatusMenuController: NSObject, CLLocationManagerDelegate {
     @IBOutlet var statusMenu: NSMenu!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    let locationManager = CLLocationManager()
 
     let wifiAPI = WifiAPI()
 
@@ -15,8 +17,16 @@ class StatusMenuController: NSObject {
         statusItem.menu = statusMenu
         statusItem.highlightMode = true
         statusItem.configure(with: nil)
+        
+        locationManager.delegate = self
 
         refreshSpeed()
+    }
+       
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        if (manager.authorizationStatus == .notDetermined) {
+            manager.requestWhenInUseAuthorization()
+        }
     }
 
     @objc func refreshSpeed() {
